@@ -12,7 +12,7 @@ body {
 
 .pdf-header-title {
   color: #e60000;
-  font-size: 17pt;
+  font-size: 19pt;
   font-weight: bold;
   vertical-align: middle;
   padding: 0 0 2.2mm 0;
@@ -25,11 +25,11 @@ body {
 }
 
 .pdf-header-logo {
-  width: 36mm;
+  width: 38mm;
 }
 
 .pdf-red-line {
-  height: 1mm;
+  height: 0.9mm;
   background-color: #e60000;
   font-size: 1px;
   line-height: 1px;
@@ -68,20 +68,20 @@ body {
 }
 
 .p1-feature-col {
-  width: 55mm;
+  width: 56mm;
 }
 
 .p1-feature-cap {
-  width: 55mm;
-  height: 11mm;
+  width: 56mm;
+  height: 10mm;
   background-color: #e60000;
   border-radius: 3mm 3mm 0 0;
-  margin-top: 5mm;
+  margin-top: 7mm;
 }
 
 .p1-feature-panel {
-  width: 55mm;
-  height: 192mm;
+  width: 56mm;
+  height: 190mm;
   background-color: #e60000;
   color: #ffffff;
   padding-top: 8mm;
@@ -90,17 +90,17 @@ body {
 .p1-feature-title {
   text-align: center;
   color: #ffffff;
-  font-size: 17pt;
+  font-size: 16pt;
   font-weight: bold;
-  padding-bottom: 6mm;
+  padding-bottom: 7mm;
 }
 
 .p1-feature-list {
   margin: 0;
   padding-left: 12mm;
   padding-right: 4mm;
-  font-size: 10.2pt;
-  line-height: 1.55;
+  font-size: 9.8pt;
+  line-height: 1.45;
 }
 
 .p1-feature-list li {
@@ -108,18 +108,18 @@ body {
 }
 
 .p1-gap {
-  width: 10mm;
+  width: 11mm;
 }
 
 .p1-product-col {
-  width: 115mm;
+  width: 113mm;
   text-align: center;
-  padding-top: 42mm !important;
+  padding-top: 39mm !important;
 }
 
 .p1-title {
   color: #111111;
-  font-size: 16pt;
+  font-size: 17pt;
   font-weight: bold;
   margin: 0 0 6mm 0;
 }
@@ -128,11 +128,11 @@ body {
   color: #666666;
   font-size: 11pt;
   font-weight: bold;
-  margin-bottom: 8mm;
+  margin-bottom: 8.5mm;
 }
 
 .p1-image-box {
-  width: 112mm;
+  width: 111mm;
   height: 98mm;
   border: 0.35mm solid #333333;
   text-align: center;
@@ -143,13 +143,13 @@ body {
 }
 
 .p1-image-box img {
-  max-width: 107mm;
+  max-width: 106mm;
   max-height: 93mm;
   vertical-align: middle;
 }
 
 .p1-approved {
-  margin-top: 36mm;
+  margin-top: 35mm;
   text-align: justify;
   color: #666666;
   font-size: 8.8pt;
