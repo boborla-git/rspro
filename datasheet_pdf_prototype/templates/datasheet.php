@@ -58,69 +58,51 @@ if (!function_exists('section_rows')) {
 
 <div class="page page-1">
 
- <table class="p1-layout-v8">
-
+ <table class="p1-layout-v9">
  <tr>
-
- <td class="p1-feature-col-v8">
- <div class="p1-feature-cap-v8"></div>
-
- <div class="p1-feature-panel-v8">
-
- <div class="p1-feature-title-v8">Features</div>
-
- <ul class="p1-feature-list-v8">
-
- <?php $features = array_slice(section_rows($specs, 'Features'), 0, 5); ?>
-
- <?php foreach ($features as $feature): ?>
-
- <li><?= h($feature['valore'] ?: $feature['attributo']) ?></li>
-
- <?php endforeach; ?>
-
- <?php for ($i = count($features); $i < 5; $i++): ?>
-
- <li>&nbsp;</li>
-
- <?php endfor; ?>
-
- </ul>
-
- </div>
-
+ <td class="p1-feature-col-v9">
+   <table class="p1-feature-table-v9">
+     <tr><td class="p1-feature-cap-v9">&nbsp;</td></tr>
+     <tr>
+       <td class="p1-feature-panel-v9">
+         <div class="p1-feature-title-v9">Features</div>
+         <ul class="p1-feature-list-v9">
+           <?php $features = array_slice(section_rows($specs, 'Features'), 0, 5); ?>
+           <?php foreach ($features as $feature): ?>
+             <li><?= h($feature['valore'] ?: $feature['attributo']) ?></li>
+           <?php endforeach; ?>
+           <?php for ($i = count($features); $i < 5; $i++): ?>
+             <li>&nbsp;</li>
+           <?php endfor; ?>
+         </ul>
+       </td>
+     </tr>
+   </table>
  </td>
 
- <td class="p1-gap-v8"></td>
- <td class="p1-product-col-v8">
+ <td class="p1-gap-v9">&nbsp;</td>
 
- <div class="p1-title-v8"><?= h($product['family_name']) ?></div>
+ <td class="p1-product-col-v9">
+   <div class="p1-title-v9"><?= h($product['family_name']) ?></div>
+   <div class="p1-stock-v9">RS Stock No.: <?= h($product['rs_stock_no']) ?></div>
 
- <div class="p1-stock-v8">RS Stock No.: <?= h($product['rs_stock_no']) ?></div>
+   <table class="p1-image-table-v9">
+     <tr>
+       <td>
+         <?php if ($productImagePath && file_exists($productImagePath)): ?>
+           <img src="<?= h($productImagePath) ?>" alt="Product image">
+         <?php else: ?>
+           <span>Image</span>
+         <?php endif; ?>
+       </td>
+     </tr>
+   </table>
 
- <div class="p1-image-box-v8">
-
- <?php if ($productImagePath && file_exists($productImagePath)): ?>
-
- <img src="<?= h($productImagePath) ?>" alt="Product image">
-
- <?php else: ?>
-
- Image
-
- <?php endif; ?>
-
- </div>
-
- <div class="p1-approved-v8">
- <strong>RS Professionally Approved Products</strong> bring to you professional quality parts across all product categories. Our product range has been tested by engineers and provides a comparable quality to the leading brands without paying a premium price.
-
- </div>
-
+   <div class="p1-approved-v9">
+     <strong>RS Professionally Approved Products</strong> bring to you professional quality parts across all product categories. Our product range has been tested by engineers and provides a comparable quality to the leading brands without paying a premium price.
+   </div>
  </td>
-
  </tr>
-
  </table>
 
 </div>
