@@ -1,262 +1,62 @@
-body {
-  font-family: arial, helvetica, sans-serif;
-  color: #555555;
-  font-size: 10pt;
-  line-height: 1.25;
-}
+body { font-family: arial, helvetica, sans-serif; color: #555555; font-size: 10pt; line-height: 1.25; }
+.pdf-header { font-family: arial, helvetica, sans-serif; width: 100%; }
+.pdf-header-title { color: #e60000; font-size: 17pt; font-weight: bold; vertical-align: middle; padding: 0 0 2.2mm 0; }
+.pdf-header-logo-cell { text-align: right; vertical-align: middle; padding: 0 0 2.2mm 0; }
+.pdf-header-logo { width: 36mm; }
+.pdf-red-line { height: 1mm; background-color: #e60000; font-size: 1px; line-height: 1px; }
+.pdf-footer { font-family: arial, helvetica, sans-serif; width: 100%; color: #e60000; font-size: 8.8pt; }
+.pdf-footer-url { padding-top: 3mm; text-align: left; }
+.pdf-footer-page { padding-top: 3mm; text-align: right; }
+.page { width: 180mm; }
 
-.pdf-header {
-  font-family: arial, helvetica, sans-serif;
-  width: 100%;
-}
+/* Page 1 - v8 stable mPDF table layout */
+.p1-layout-v8 { width: 180mm; border-collapse: collapse; table-layout: fixed; }
+.p1-layout-v8 td { vertical-align: top; padding: 0; }
+.p1-feature-col-v8 { width: 54mm; }
+.p1-gap-v8 { width: 10mm; }
+.p1-product-col-v8 { width: 116mm; text-align: center; padding-top: 35mm !important; }
+.p1-feature-cap-v8 { width: 54mm; height: 10mm; background-color: #e60000; border-radius: 3mm 3mm 0 0; margin-top: 5mm; }
+.p1-feature-panel-v8 { width: 54mm; height: 192mm; background-color: #e60000; color: #ffffff; padding-top: 8mm; }
+.p1-feature-title-v8 { text-align: center; color: #ffffff; font-size: 16pt; font-weight: bold; padding-bottom: 6mm; }
+.p1-feature-list-v8 { margin: 0; padding-left: 11mm; padding-right: 4mm; font-size: 9.7pt; line-height: 1.48; }
+.p1-feature-list-v8 li { margin-bottom: 2.2mm; }
+.p1-title-v8 { color: #111111; font-size: 16pt; font-weight: bold; margin: 0 0 6mm 0; }
+.p1-stock-v8 { color: #666666; font-size: 11pt; font-weight: bold; margin-bottom: 8mm; }
+.p1-image-box-v8 { width: 112mm; height: 98mm; border: 0.35mm solid #333333; text-align: center; vertical-align: middle; line-height: 98mm; color: #d0d0d0; font-size: 25pt; }
+.p1-image-box-v8 img { max-width: 107mm; max-height: 93mm; vertical-align: middle; }
+.p1-approved-v8 { margin-top: 36mm; text-align: justify; color: #666666; font-size: 8.8pt; line-height: 1.42; }
 
-.pdf-header-title {
-  color: #e60000;
-  font-size: 19pt;
-  font-weight: bold;
-  vertical-align: middle;
-  padding: 0 0 2.2mm 0;
-}
-
-.pdf-header-logo-cell {
-  text-align: right;
-  vertical-align: middle;
-  padding: 0 0 2.2mm 0;
-}
-
-.pdf-header-logo {
-  width: 38mm;
-}
-
-.pdf-red-line {
-  height: 0.9mm;
-  background-color: #e60000;
-  font-size: 1px;
-  line-height: 1px;
-}
-
-.pdf-footer {
-  font-family: arial, helvetica, sans-serif;
-  width: 100%;
-  color: #e60000;
-  font-size: 8.8pt;
-}
-
-.pdf-footer-url {
-  padding-top: 3mm;
-  text-align: left;
-}
-
-.pdf-footer-page {
-  padding-top: 3mm;
-  text-align: right;
-}
-
-.page {
-  width: 180mm;
-}
-
-/* Page 1 - stable mPDF table layout */
-.p1-layout {
-  width: 180mm;
-  border-collapse: collapse;
-}
-
-.p1-layout td {
-  vertical-align: top;
-  padding: 0;
-}
-
-.p1-feature-col {
-  width: 56mm;
-}
-
-.p1-feature-cap {
-  width: 56mm;
-  height: 10mm;
-  background-color: #e60000;
-  border-radius: 3mm 3mm 0 0;
-  margin-top: 7mm;
-}
-
-.p1-feature-panel {
-  width: 56mm;
-  height: 190mm;
-  background-color: #e60000;
-  color: #ffffff;
-  padding-top: 8mm;
-}
-
-.p1-feature-title {
-  text-align: center;
-  color: #ffffff;
-  font-size: 16pt;
-  font-weight: bold;
-  padding-bottom: 7mm;
-}
-
-.p1-feature-list {
-  margin: 0;
-  padding-left: 12mm;
-  padding-right: 4mm;
-  font-size: 9.8pt;
-  line-height: 1.45;
-}
-
-.p1-feature-list li {
-  margin-bottom: 2.2mm;
-}
-
-.p1-gap {
-  width: 11mm;
-}
-
-.p1-product-col {
-  width: 113mm;
-  text-align: center;
-  padding-top: 39mm !important;
-}
-
-.p1-title {
-  color: #111111;
-  font-size: 17pt;
-  font-weight: bold;
-  margin: 0 0 6mm 0;
-}
-
-.p1-stock {
-  color: #666666;
-  font-size: 11pt;
-  font-weight: bold;
-  margin-bottom: 8.5mm;
-}
-
-.p1-image-box {
-  width: 111mm;
-  height: 98mm;
-  border: 0.35mm solid #333333;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 98mm;
-  color: #d0d0d0;
-  font-size: 25pt;
-}
-
-.p1-image-box img {
-  max-width: 106mm;
-  max-height: 93mm;
-  vertical-align: middle;
-}
-
-.p1-approved {
-  margin-top: 35mm;
-  text-align: justify;
-  color: #666666;
-  font-size: 8.8pt;
-  line-height: 1.42;
-}
+/* Existing Page 1 selectors retained for compatibility */
+.p1-layout { width: 180mm; border-collapse: collapse; }
+.p1-layout td { vertical-align: top; padding: 0; }
+.p1-feature-col { width: 55mm; }
+.p1-feature-cap { width: 55mm; height: 11mm; background-color: #e60000; border-radius: 3mm 3mm 0 0; margin-top: 5mm; }
+.p1-feature-panel { width: 55mm; height: 192mm; background-color: #e60000; color: #ffffff; padding-top: 8mm; }
+.p1-feature-title { text-align: center; color: #ffffff; font-size: 17pt; font-weight: bold; padding-bottom: 6mm; }
+.p1-feature-list { margin: 0; padding-left: 12mm; padding-right: 4mm; font-size: 10.2pt; line-height: 1.55; }
+.p1-feature-list li { margin-bottom: 2.2mm; }
+.p1-gap { width: 10mm; }
+.p1-product-col { width: 115mm; text-align: center; padding-top: 42mm !important; }
+.p1-title { color: #111111; font-size: 16pt; font-weight: bold; margin: 0 0 6mm 0; }
+.p1-stock { color: #666666; font-size: 11pt; font-weight: bold; margin-bottom: 8mm; }
+.p1-image-box { width: 112mm; height: 98mm; border: 0.35mm solid #333333; text-align: center; vertical-align: middle; line-height: 98mm; color: #d0d0d0; font-size: 25pt; }
+.p1-image-box img { max-width: 107mm; max-height: 93mm; vertical-align: middle; }
+.p1-approved { margin-top: 36mm; text-align: justify; color: #666666; font-size: 8.8pt; line-height: 1.42; }
 
 /* Page 2/3 sections */
-.section {
-  width: 174mm;
-  margin-bottom: 8.2mm;
-  page-break-inside: avoid;
-}
-
-.page-2 .section {
-  margin-bottom: 7.2mm;
-}
-
-.section-title {
-  display: inline-block;
-  min-width: 50mm;
-  background-color: #e60000;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 10pt;
-  line-height: 1;
-  padding: 4mm 4mm 3mm 4mm;
-  border-radius: 3mm 3mm 0 0;
-}
-
-.section-title-wide {
-  min-width: 55mm;
-}
-
-.section-rule {
-  height: 0.75mm;
-  background-color: #e60000;
-  font-size: 1px;
-  line-height: 1px;
-}
-
-.description-box {
-  border: 0.25mm solid #777777;
-  height: 52mm;
-  padding: 17mm 22mm 4mm 22mm;
-  font-style: italic;
-  font-size: 10pt;
-  line-height: 1.65;
-  color: #333333;
-}
-
-.spec-table,
-.similar-table {
-  width: 174mm;
-  border-collapse: collapse;
-  font-size: 8.8pt;
-}
-
-.spec-table td,
-.similar-table td,
-.similar-table th {
-  border: 0.25mm solid #777777;
-  padding: 1.35mm 2mm;
-  vertical-align: top;
-}
-
-.spec-label {
-  width: 64mm;
-  color: #333333;
-  font-weight: bold;
-}
-
-.spec-value {
-  color: #666666;
-}
-
-.page-2 .spec-table td {
-  height: 5.7mm;
-}
-
-.similar-table th {
-  color: #333333;
-  font-weight: bold;
-  text-align: left;
-  height: 9mm;
-}
-
-.similar-table td {
-  color: #666666;
-  height: 7mm;
-}
-
-.diagram-caption {
-  width: 174mm;
-  margin-top: 27mm;
-  color: #c7c7c7;
-  text-align: center;
-  font-size: 12pt;
-}
-
-.diagram-box {
-  margin-top: 6mm;
-  width: 174mm;
-  height: 68mm;
-  text-align: center;
-}
-
-.diagram-box img {
-  max-width: 150mm;
-  max-height: 68mm;
-}
+.section { width: 174mm; margin-bottom: 8.2mm; page-break-inside: avoid; }
+.page-2 .section { margin-bottom: 7.2mm; }
+.section-title { display: inline-block; min-width: 50mm; background-color: #e60000; color: #ffffff; font-weight: bold; font-size: 10pt; line-height: 1; padding: 4mm 4mm 3mm 4mm; border-radius: 3mm 3mm 0 0; }
+.section-title-wide { min-width: 55mm; }
+.section-rule { height: 0.75mm; background-color: #e60000; font-size: 1px; line-height: 1px; }
+.description-box { border: 0.25mm solid #777777; height: 52mm; padding: 17mm 22mm 4mm 22mm; font-style: italic; font-size: 10pt; line-height: 1.65; color: #333333; }
+.spec-table, .similar-table { width: 174mm; border-collapse: collapse; font-size: 8.8pt; }
+.spec-table td, .similar-table td, .similar-table th { border: 0.25mm solid #777777; padding: 1.35mm 2mm; vertical-align: top; }
+.spec-label { width: 64mm; color: #333333; font-weight: bold; }
+.spec-value { color: #666666; }
+.page-2 .spec-table td { height: 5.7mm; }
+.similar-table th { color: #333333; font-weight: bold; text-align: left; height: 9mm; }
+.similar-table td { color: #666666; height: 7mm; }
+.diagram-caption { width: 174mm; margin-top: 27mm; color: #c7c7c7; text-align: center; font-size: 12pt; }
+.diagram-box { margin-top: 6mm; width: 174mm; height: 68mm; text-align: center; }
+.diagram-box img { max-width: 150mm; max-height: 68mm; }
