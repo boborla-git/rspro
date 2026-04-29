@@ -82,3 +82,25 @@ body { font-family: arial, helvetica, sans-serif; color: #555555; font-size: 10p
 .p1-image-table-v9 img { max-width: 107mm; max-height: 93mm; vertical-align: middle; }
 .p1-image-table-v9 span { color: #d0d0d0; font-size: 25pt; }
 .p1-approved-v9 { margin-top: 35mm; text-align: justify; color: #666666; font-size: 8.8pt; line-height: 1.42; }
+
+/* ===== Page 1 v10 - rigid Word-like mPDF layout ===== */
+.p1-layout-v10 { width: 180mm; border-collapse: collapse; table-layout: fixed; }
+.p1-layout-v10 td { vertical-align: top; padding: 0; }
+.p1-feature-col-v10 { width: 55mm; }
+.p1-gap-v10 { width: 10mm; }
+.p1-product-col-v10 { width: 115mm; text-align: center; padding-top: 37mm !important; }
+
+.p1-feature-table-v10 { width: 55mm; border-collapse: collapse; margin-top: 15mm; }
+.p1-feature-cap-v10 { height: 11mm; background-color: #e60000; font-size: 1px; line-height: 1px; }
+.p1-feature-title-v10 { height: 24mm; text-align: center; vertical-align: middle; color: #e60000; background-color: #ffffff; font-size: 17pt; font-weight: bold; }
+.p1-feature-panel-v10 { height: 170mm; background-color: #e60000; color: #ffffff; padding: 10mm 5mm 4mm 9mm; }
+.p1-feature-list-v10 { color: #ffffff; margin: 0; padding-left: 6mm; font-size: 9.4pt; line-height: 1.55; }
+.p1-feature-list-v10 li { margin-bottom: 2.6mm; }
+
+.p1-title-v10 { color: #111111; font-size: 16pt; font-weight: bold; margin: 0 0 6mm 0; }
+.p1-stock-v10 { color: #666666; font-size: 11pt; font-weight: bold; margin-bottom: 8mm; }
+.p1-image-table-v10 { width: 112mm; height: 98mm; border-collapse: collapse; margin-left: auto; margin-right: auto; }
+.p1-image-table-v10 td { border: 0.35mm solid #333333; width: 112mm; height: 98mm; text-align: center; vertical-align: middle; color: #d0d0d0; font-size: 25pt; }
+.p1-image-table-v10 img { max-width: 107mm; max-height: 93mm; vertical-align: middle; }
+.p1-image-table-v10 span { color: #d0d0d0; font-size: 25pt; }
+.p1-approved-v10 { margin-top: 36mm; text-align: justify; color: #666666; font-size: 8.8pt; line-height: 1.42; }
